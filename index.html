@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="res/bootstrap.min.css">
-  <title>HTML</title>
-
-  <!-- HTML -->
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
-
 <body>
-  <div class="img">
-    <img height="200" width="200" src="file/pngwing.com.png" alt="">
-  </div>
-  <input type="range" id="progres">
-  <div class="controller text-light">
-    <button id="back" class="fa mx-3 p-4 text-light btn fa-backward"></button>
-    <button id="action" class="fa mx-3 p-4 text-light  btn fa-play"></button>
-    <button id="front" class="fa mx-3 p-4 text-light btn fa-forward"></button>
-  </div>
+    <div class="music-player-box">
+        <div class="player-disk">
+            <img src="files/pngwing.com.png" alt="">
+        </div>
+        <div class="music-progress">
+            <input type="range"  id="progress">
+        </div>
+        <br>
+        <div class="controller">
+            <button id="back" class="fa fa-step-backward"></button>
+            <button id="play" class="fa fa-play"></button>
+            <button id="forward" class="fa fa-step-forward"></button>
+        </div>
+    </div>
 
-
-  <!-- Project -->
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
