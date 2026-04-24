@@ -9,8 +9,7 @@ body{
 }
 .music-player-box{
     max-width: 420px;
-    /* max-height: 90vh; */
-
+    border-radius: 10px;
     width: 95%;
     height: 90vh;
     margin: 20px auto;
@@ -25,6 +24,7 @@ body{
 
 .player-disk img{
     width: 100%;
+
 }
 .music-progress{
     margin-top: 20px;
@@ -64,4 +64,13 @@ body{
     background: #0a0a0a;
     color: white;
     border: 3px solid white;
+}
+.rotate{
+    animation: disk 10s infinite linear;
+}
+
+@keyframes disk {
+    0%{
+        transform: rotate(-360deg);
+    }
 }
